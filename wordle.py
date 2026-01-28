@@ -1,6 +1,9 @@
+
+# se anhaden variables
 letras_verificadas = []
 cantidad_letras = 5
 
+# se crea la funcion que verificara las palabras anhadidas
 def verificador_palabra(palabra_ingresada, palabra_secreta):
     for i in range(cantidad_letras):
         las_palabras_son_iguales = palabra_ingresada[i] == palabra_secreta[i]

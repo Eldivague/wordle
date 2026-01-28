@@ -5,6 +5,9 @@ cantidad_letras = 5
 
 # se crea la funcion que verificara las palabras anhadidas
 def verificador_palabra(palabra_ingresada, palabra_secreta):
+
+    palabra_ingresada = input("Ingrese una palabra")
+
     for i in range(cantidad_letras):
         las_palabras_son_iguales = palabra_ingresada[i] == palabra_secreta[i]
         la_letra_existe_en_la_palabra = palabra_ingresada[i] in palabra_secreta 
@@ -19,3 +22,11 @@ def verificador_palabra(palabra_ingresada, palabra_secreta):
     return letras_verificadas
 
 verificador_palabra('holas', 'calor')
+
+# definir la cantidad de intentos = variable
+intentos = 0
+
+while intentos < 6:
+    print(f"te quedan {6 - intentos} intentos")
+    intentos = intentos + 1
+    print(f"la palabra ingresada es: {palabra_ingresada}")
